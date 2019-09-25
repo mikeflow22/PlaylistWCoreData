@@ -7,9 +7,10 @@
 //
 
 import Foundation
-import CoreData
 
 class SongController {
+    
+    static let shared = SongController()
     
     func createSong(songName: String, artistName: String, playlist: Playlist){
         Song(songName: songName, artistName: artistName, playlist: playlist)
